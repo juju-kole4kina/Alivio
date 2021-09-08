@@ -1,0 +1,644 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+@font-face {
+  font-family: "AvenirLT";
+  font-display: swap;
+  src: url("../fonts/AvenirLT-Black.woff") format("woff"), url("../fonts/AvenirLT-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-display: swap;
+  src: url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-display: swap;
+  src: url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../fonts/Lato-SemiboldItalic.woff") format("woff"), url("../fonts/Lato-SemiboldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 20;
+  color: #484848;
+}
+
+.warpper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+._btn {
+  background-color: #01996d;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+._btn:hover {
+  background-color: #52a097;
+  -webkit-box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+          box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #292929;
+}
+
+.header__wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  max-height: 85px;
+}
+
+.header__main {
+  margin-left: 10px;
+}
+
+.header__logo {
+  font-family: "AvenirLT";
+  font-weight: 900;
+  font-size: 25px;
+  color: #01996d;
+  line-height: 30px;
+}
+
+.header__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 557px;
+          flex: 0 0 557px;
+  margin-left: 158px;
+  margin-right: 300px;
+}
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 277px;
+          flex: 0 0 277px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  padding-bottom: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor)) bottom/var(--d, 0) 2px no-repeat;
+  background: -o-linear-gradient(currentColor 0 0) bottom/var(--d, 0) 2px no-repeat;
+  background: linear-gradient(currentColor 0 0) bottom/var(--d, 0) 2px no-repeat;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__item:hover {
+  --d: 100%;
+}
+
+.menu__link:hover {
+  color: #000;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.buttons__signin:hover {
+  color: #000;
+  font-size: 25px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttons__start {
+  width: 183px;
+  height: 51px;
+}
+
+.banner {
+  margin-top: 85px;
+  height: 980px;
+  position: relative;
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+.banner__block {
+  padding: 175px 0;
+  width: 440px;
+}
+
+.block__title {
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 65px;
+  color: #01996d;
+  line-height: 74px;
+}
+
+.block__subtitel {
+  font-size: 20px;
+  line-height: 31px;
+  margin: 30px 0 70px 0;
+}
+
+.block__btn {
+  width: 227px;
+  height: 65px;
+}
+
+.steps__container {
+  margin-bottom: 300px;
+}
+
+.steps__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.steps__main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._col-two {
+  position: relative;
+  top: 245px;
+}
+
+._col-three {
+  position: relative;
+  bottom: 20px;
+}
+
+.top-block__titles {
+  width: 584px;
+  margin-right: 136px;
+}
+
+.top-block__item {
+  width: 671px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.titles__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 157%;
+}
+
+.titles__title {
+  font-family: "Georgia";
+  font-weight: 900;
+  color: #01996d;
+  font-size: 50px;
+  line-height: 157%;
+}
+
+.main-block__column {
+  width: 441px;
+}
+
+.main-block__title {
+  position: relative;
+  color: #000;
+  margin-bottom: 55px;
+}
+
+.main-block__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+
+.main-block__image-items {
+  position: relative;
+}
+
+.title__number {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 150px;
+  color: rgba(1, 153, 109, 0.2);
+}
+
+.title__name {
+  position: absolute;
+  top: 98px;
+  left: 85px;
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+._st {
+  left: 125px;
+}
+
+.image-items__image-item-ws {
+  position: absolute;
+  top: 225px;
+  left: 205px;
+  z-index: 50;
+}
+
+.story {
+  background-color: #245852;
+  color: #fff;
+}
+
+.story__container {
+  max-width: 1507px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.story__story-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.story__story-content {
+  width: 580px;
+}
+
+.story-content__title {
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 79px;
+  margin-bottom: 30px;
+}
+
+.story-content__subtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 39px;
+  margin-bottom: 30px;
+}
+
+.story-content__btn {
+  width: 240px;
+  height: 65px;
+}
+
+hr {
+  border: none;
+  background-color: #000;
+  color: #000;
+  height: 1px;
+  width: 110px;
+  margin: 1em auto;
+}
+
+.prod__container {
+  padding: 111px 0 240px 0;
+}
+
+.prod__prod-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.prod-body__prod-image {
+  position: relative;
+}
+
+.prod-body__prod-content {
+  width: 584px;
+}
+
+.prod-image__card {
+  position: absolute;
+  top: 350px;
+  left: -55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 296px;
+  height: 293px;
+  padding: 22px 0 15px 0;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+          box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+  color: #000;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.card__sign {
+  font-size: 11.9px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.card__ul-title {
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 15.9px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.card__item {
+  font-size: 10.6px;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+
+.prod-content__subtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 39px;
+}
+
+.prod-content__title {
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 79px;
+  color: #01996d;
+  margin-bottom: 20px;
+}
+
+.prod-content__text {
+  font-size: 20px;
+  line-height: 31px;
+  margin-bottom: 40px;
+}
+
+.prod-content__btn {
+  width: 227px;
+  height: 65px;
+}
+
+.footer {
+  background-color: #245852;
+  color: #fff;
+  height: 630px;
+  padding: 100px 0;
+}
+
+.main__logo {
+  font-family: "AvenirLT";
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.menu-footer__list {
+  display: inline-block;
+}
+
+.menu-footer__item {
+  margin: 60px 0;
+  font-weight: 500;
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor)) bottom/var(--d, 0) 2px no-repeat;
+  background: -o-linear-gradient(currentColor 0 0) bottom/var(--d, 0) 2px no-repeat;
+  background: linear-gradient(currentColor 0 0) bottom/var(--d, 0) 2px no-repeat;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-footer__item:hover {
+  --d: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .header__body {
+    padding: 5px 10px;
+  }
+
+  .header__menu {
+    margin: 0 100px;
+  }
+
+  .banner {
+    margin-top: 63px;
+    background: url(../img/bg.jpg) no-repeat;
+  }
+}
+
+.webp .banner { background: url(../img/bg.webp) no-repeat; }
+
+@media (max-width: 767.98px) {
+
+  .webp .banner { background: url(../img/bg.webp) no-repeat; }
+}

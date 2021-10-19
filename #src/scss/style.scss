@@ -86,7 +86,6 @@ body {
 
    &__wrapper {
       background-color: rgba(255, 255, 255, 0.3);
-      position: fixed;
       width: 100%;
       top: 0;
       left: 0;
@@ -97,7 +96,7 @@ body {
    &__body {
       display: flex;
       align-items: center;
-      padding: 5px 0;
+      padding: 17px 0;
       max-height: 85px;
    }
 

@@ -199,7 +199,6 @@ body {
 
 .header__wrapper {
   background-color: rgba(255, 255, 255, 0.3);
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -214,7 +213,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 0;
+  padding: 17px 0;
   max-height: 85px;
 }
 
@@ -622,10 +621,6 @@ hr {
 }
 
 @media (max-width: 767.98px) {
-  .header__body {
-    padding: 5px 10px;
-  }
-
   .header__menu {
     margin: 0 100px;
   }
